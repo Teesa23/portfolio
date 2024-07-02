@@ -64,7 +64,22 @@ body {
     align-items: center;
     padding: 70px 10% 0;
 }
-
+.home-img {
+    flex: 0 0 auto; /* Prevents the image from stretching */
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+.home-img img {
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-left: 50px;
+    max-width: 100%; /* Keeps the image within the constraints of its container */
+    height: auto;
+    border-radius: 8px;
+}
 .home-content {
     max-width: 600px;
 }
@@ -149,8 +164,11 @@ body {
     align-items: center;
     gap: 1.5rem;
 }
+
 .about-img img{
+    padding-left: 30px;
     padding-bottom: 20%;
+    padding-top: 40px;
     max-width: 630px;
     height: auto;
     width: 100%;
@@ -174,9 +192,10 @@ body {
 
 .about-text p{
     color: aliceblue;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     margin-bottom: 4rem;
+    padding-right: 5px;
 }
 
 #services{
@@ -188,7 +207,7 @@ body {
 .sub-title{
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
 }
 .sub-title span{
     color: #0ef;
@@ -273,6 +292,7 @@ section{
     margin-bottom: 50px;
 }
 .bar{
+    margin-top: 20px;
     font-size: 23px;
 }
 .Technical-bars .bar{
@@ -480,15 +500,13 @@ section{
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
     gap: 3rem;
-    padding-left: 30px;
+    padding-left: 20px;
     margin-top: 130px;
 }
 .contact-text h2{
     font-size: 80px;
     line-height: 1;
-    text-align: center;
 }
 .contact-text h2 span{
     color: #0ef;
